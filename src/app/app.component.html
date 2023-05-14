@@ -16,16 +16,17 @@
     <section id="perfil">
       <div class="perfil row justify-content-center">
         <div class="col-6 col-md-2">
-          <img src="../assets/images/profile-pic.jpg" class="photo w-100">
+          <img src="./assets/images/profile-pic.jpg" class="photo w-100">
         </div>
         <div class="col-12 text-center pt-3">
           <h1 class="name">@Pedrusoad <i class="fa-solid fa-check" style="color: #00b6ff;"></i></h1>
         </div>
-        <div class="col-6 text-center row justify-content-center pt-3">
-          <div class="col">teste</div>
-          <div class="col">teste</div>
-          <div class="col">teste</div>
-          <div class="col">teste</div>
+        <div class="col text-center row justify-content-center pt-3">
+          <div class="col-auto px-md-3 fs-2 fs-md-3" *ngFor="let item of socialPages; let index = index">
+            <a [href]="item.link" target="_blank">
+              <i [class]="item.iconClass + ' socialIcons'"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>
