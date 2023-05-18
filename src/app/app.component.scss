@@ -14,6 +14,35 @@
     border-radius: 50%;
 }
 
+.description {
+    color: #aba7a5;
+}
+
+.socialIcons {
+    transition: 1s;
+}
+
+.instagram-pink:hover {
+    color: #fe205a;
+}
+
+.twitter-blue:hover {
+    color: #1c9aef;
+}
+
+.twitch-purple:hover {
+    color: #8d41fe;
+}
+
+.whatsapp-green:hover {
+    color: #0dc143;
+}
+
+.youtube-red:hover {
+    color: #fe0000;
+}
+
 .socialIcons:hover {
-    color: #a9a9a9;
+    font-size: 5rem;
+    transition: 1s;
 }

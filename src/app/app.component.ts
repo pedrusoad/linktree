@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,38 +8,54 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {  
   title = 'linktree';
+  colorIcon: any = '#fff';
   socialPages = [
     {
       "socialMedia": "instagram",
       "link": "https://www.instagram.com/pedrusoad",
       "iconClass": "fa-brands fa-instagram",
+      "color": "pink"
     },    
     {
-      "socialMedia": "Twitter",
+      "socialMedia": "twitter",
       "link": "https://www.twitter.com/pedros0ad",
       "iconClass": "fa-brands fa-twitter",
+      "color": "blue"
     },
     {
-      "socialMedia": "Twitch",
+      "socialMedia": "twitch",
       "link": "https://www.twitch.tv/pedrusoad",
       "iconClass": "fa-brands fa-twitch",
+      "color": "purple"
     },
     {
-      "socialMedia": "Whatsapp",
+      "socialMedia": "whatsapp",
       "link": "https://api.whatsapp.com/send?phone=5562981819228",
       "iconClass": "fa-brands fa-whatsapp",
+      "color": "green"
     },
     {
-      "socialMedia": "Tiktok",
+      "socialMedia": "tiktok",
       "link": "https://www.tiktok.com/@pedrosoad",
       "iconClass": "fa-brands fa-tiktok",
+      "color": "white"
     },
     {
-      "socialMedia": "Youtube",
+      "socialMedia": "youtube",
       "link": "https://www.youtube.com/@pedrusoad",
       "iconClass": "fa-brands fa-youtube",
+      "color": "red"
     }
   ]
+
+  onMouseEnter(x: any) {
+    this.colorIcon = x.color
+    console.log(x)
+  }
+
+  onMouseLeave(x: any) {
+    this.colorIcon = '#fff'
+  }
 
   ngOnInit(): void {
     console.log(this.socialPages)

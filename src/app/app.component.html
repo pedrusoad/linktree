@@ -5,9 +5,9 @@
     <section id="share">
       <div class="share row w-100 justify-content-end">
         <div class="col-auto">
-          <button class="share-icon">
-            <div class="px-2 py-1">
-              <i class="fa-solid fa-arrow-up-from-bracket text-black fs-1"></i>
+          <button class="share-icon fs-1">
+            <div class="p-1 px-md-2 py-md-1">
+              <i class="fa-solid fa-arrow-up-from-bracket text-black"></i>
             </div>
           </button>
         </div>
@@ -21,14 +21,17 @@
         <div class="col-12 text-center pt-3">
           <h1 class="name">@Pedrusoad <i class="fa-solid fa-check" style="color: #00b6ff;"></i></h1>
         </div>
-        <div class="col text-center row justify-content-center pt-3">
+        <div class="col-12 text-center">
+          <h3 class="description fs-1">AWS Certified | Desenvolvedor Front-End</h3>
+        </div>
+        <div class="col text-center row justify-content-center align-items-start pt-3">
           <div class="col-auto px-md-3 fs-2 fs-md-3" *ngFor="let item of socialPages; let index = index">
             <a [href]="item.link" target="_blank">
-              <i [class]="item.iconClass + ' socialIcons'"></i>
+              <i [class]="item.iconClass + ' socialIcons ' + item.socialMedia + '-' + item.color"></i>
             </a>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
   </div>
 </div>
